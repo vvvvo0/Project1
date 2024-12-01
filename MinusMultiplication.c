@@ -8,10 +8,9 @@ int main(void)
 	printf("입력 받은 양의 정수: ");
 	scanf("%d", &num);
 	
-	while (i<num+1)
+	while (i++<num)
 	{
 		printf("%d\n", 3*i);
-		i++;
 	}
 	return 0;
 }
