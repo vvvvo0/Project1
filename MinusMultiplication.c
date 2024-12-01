@@ -3,15 +3,14 @@
 
 int main(void)
 {
-	int num;
-	int i=0;
-	printf("입력 받은 양의 정수: ");
-	scanf("%d", &num);
+	int dan, num = 1;
+	printf("몇 단? ");
+	scanf("%d", &dan);
 	
-	while (i<num)
+	while (num<10)
 	{
-		printf("Hello world! \n", num);
-		i++;
+		printf("%d X %d = %d\n", dan, num, dan * num);
+		num++;
 	}
 	return 0;
 }
