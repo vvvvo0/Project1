@@ -8,7 +8,9 @@ int main(void)
     int num1 = 10;
     int num2 = 20;
 
-    int* ptr1 = &num1;
+    int* ptr1; //포인터 변수를 선언만하고 초기화하지 않으면 쓰레기 값으로 초기화 됨.
+               //에러메시지: 초기화되지 않은 ptr1 지역 변수를 사용했습니다.
+               //에러메시지: 초기화되지 않은 메모리 ptr1을 사용하고 있습니다.
     int* ptr2 = &num2;
     int* temp;
 
