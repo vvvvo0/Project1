@@ -12,7 +12,7 @@ int main(void)
 
     for (i = 0;i < arrlen;i++) {
 
-        printf("%d", arr[i]);
+        printf("%c", arr[i]); //문자로 출력을 위해 서식을 %c로 변경.
 
     }
     return 0;
